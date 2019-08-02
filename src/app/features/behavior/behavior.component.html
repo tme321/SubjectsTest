@@ -1,0 +1,9 @@
+<h2>Behavior Subject Test</h2>
+<div>
+    <label>Show/Hide</label><button (click)="onToggle()">Toggle</button>
+</div>
+<div>
+    <ng-container *ngIf="isShowing$ | async">
+        <p>Behavior Subject is showing</p>
+    </ng-container>
+</div>
